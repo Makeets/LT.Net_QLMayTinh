@@ -1,0 +1,723 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body
+{
+    font-family: sans-serif;
+}
+/* ----HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER ---HEADER */
+#header
+{
+    width: 100%;
+    height: 80px;
+}
+.container
+{
+    width: 1540px;
+    margin: 0px auto;
+    height: 80px;
+}
+#header .container div.logo
+{
+    width: 750px;
+    float: left;
+}
+#header .container div.logo a
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    display: block;
+    line-height: 80px;
+    color: #FF6699;
+}
+#header .container div.in4
+{
+    float: left;
+    width: 790px;
+    height: 80px;
+}
+#header .container div.in4 ul
+{
+    margin-left: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header .container div.in4 ul li
+{
+    display: inline-block;
+    height: 80px;
+    margin-left: 60px;
+
+}
+#header .container div.in4 ul li .contact 
+{
+    float: left;
+    height: 80px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    
+}
+#header .container div.in4 ul li .contact label
+{
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    color: #FF6699;
+}
+#header .container div.in4 ul li a
+{
+    text-decoration: none;
+    display: block;
+    color:#FF6699;
+    width: 250px;
+    border-radius: 40px;
+    text-align: center;
+    background: black;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+#header .container div.in4 ul li a:hover
+{
+    background-color: #FF6699;
+    color: white;
+}
+/* ------startmenu------startmenu---------startmenu---------startmenu---------startmenu---------startmenu---------startmenu---------startmenu--------- */
+#nav
+{
+    width: 100%;
+    background: #FF6699;
+    height: 50px;
+    /* position: fixed;
+    z-index: 5; */
+}
+#nav .container ul.menu
+{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+    float: left;
+    width: 1040px ;
+}
+#nav .container ul.menu > li
+{
+    display: inline-block;
+    position: relative;
+}
+.sick
+{
+    width: 250px;
+    background: #FF6699;
+    min-height: 150px;
+    visibility: hidden;
+    position:absolute;
+    z-index: 1;
+    transition: 0.1s;
+    top:60px;
+}
+.menu li:hover .sick
+{
+    visibility: visible;
+    top:50px
+}
+#nav .container ul.menu > li > a
+{
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding:0px 30px;
+    
+}
+#nav .container ul.menu > li > a:hover
+{
+    background: black;
+    color: #FF6699; 
+}
+
+ul.sick li
+{
+    list-style: none;
+    
+}
+ul.sick li a
+{
+    color: white;
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    text-indent: 10px;
+
+}
+ul.sick li a:hover
+{
+    background: black;
+    color: #FF6699; 
+}
+#nav .search 
+{
+    width: 400px;
+    float: right;
+    position: relative;
+}
+#nav .search .keyword
+{
+    width: 70%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 40px;
+    height: 30px;
+    text-indent: 10px;
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+}
+#nav .search .btnTK
+{
+    width: 25px;
+    height: 25px;
+    border-radius:20px;
+    margin-top: 13px;
+    position: absolute;
+    left: 252px;
+    background: transparent;
+    border: none;
+}
+.others
+{   
+    background: transparent;
+    border: none;
+    float: right ;
+    list-style: none;
+    display: flex;
+    position:absolute;
+    left: 1630px;
+}
+.others li
+{   
+    margin-top:15px;
+    margin-right: 15px;
+}
+.others li a
+{
+    color: white;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+.others li a:hover
+{
+    color: black;
+}
+#nav .search .user
+{
+    width: 25px;
+    height: 25px;
+    border-radius:20px;
+    margin-top: 13px;
+    background: transparent;
+    border: none;
+}
+/* banner-----banner-----banner-----banner-----banner-----banner-----banner-----banner-----banner-----*/
+#Banner
+{
+padding-bottom: 30px;
+border-bottom: 2px solid black;
+overflow: hidden;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+    width: 100%;
+    height: 80%;
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+.dot-container
+{
+    position: absolute;
+    height: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.dot
+{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.dot.active
+{
+    background-color: black;
+}
+/* ft------ft------ft------ft------ft------ft------ft------ft------ft------ft------vft------ft------ft------*/
+#feature
+{
+    width: 100%;
+}
+a
+{
+    text-decoration: none;
+}
+#feature .container
+{
+    width: 100%;
+    margin: 30px auto;
+    min-height: 300px;
+}
+#feature .container .left,
+#feature .container .right
+{
+    float: left;
+    margin-bottom: 100px !important;
+}
+#feature .container .left
+{   
+    width: 60%;
+    margin-left: 120px;
+}
+#feature .container .left >h1
+{
+    text-align: center;
+    color: #FF6699;
+}
+#feature .container .left .card
+{
+    float: left;
+    width: 40%;
+    height: 450px;
+    margin: 50px 20px 10px 0px;
+    display: block;
+    line-height: 30px;
+
+}
+.btn
+{
+    margin-top: 10px;
+}
+#feature .container .left .card .btnMua
+{   
+    width: 60px;
+    height: 40px;
+    background: black;
+    color: #FF6699;
+    font-size: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+}  
+#feature .container .left .card .btnThem
+{
+    width: 110px;
+    height: 40px;
+    background:black;
+    color:#FF6699;
+    font-size: 15px;
+    border-radius: 100px;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 5px;
+} 
+
+#a
+{
+    width: 350px;
+    height: 350px;
+}
+#c
+{
+    width: 100%;
+    height: 460px;
+} 
+#feature .container .right
+{
+    width: 460px;
+    padding: 15px;
+}
+#feature .container .right img
+{   
+    border: 10px solid #FF6699; 
+    margin-bottom: 20px;
+}
+#feature .container .left .card img
+{
+    width: 100%;
+    border:2px solid #FF6699
+}
+/*----Footer---Footer---Footer---Footer---Footer---Footer---Footer---Footer---Footer---Footer---Footer---Footer-----Footer---Footer---Footer---Footer--*/
+.guidance
+{
+    width: 100%;
+    background: #FF6699 ;
+    height: 150px;
+    clear: both;
+    background-size: cover;
+    text-align: center;
+    padding-top: 55px;
+    color: white;
+    display: block;
+}
+.footer h3{
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    background:silver;
+    line-height: 50px;
+    display: block;
+}
+/*---product---product---product---product---product---product---product---product---product---product---product---product---product---product----*/
+.product
+{
+    padding: 90px 0;
+    margin-bottom: 400px;
+    width: 100%;
+}
+.product .container .content .left
+{   
+    width: 35%;
+    border-right: #FF6699 solid;
+    border-bottom: #FF6699 solid;
+}
+.content
+{
+    display: flex;   
+    padding: 10px;
+}
+.product .container .content .right
+{   
+    margin-left: 30px;
+    width: 50%;
+}
+.right-name h1
+{
+    font-size: 30px;
+    margin-bottom: 3px;
+    color: #FF6699;
+}
+.right-name p
+{
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: #ccc;;
+}
+.right-price p
+{
+font-size: 20px;
+margin-bottom: 3px;
+font-weight: bold;
+}
+.right-sl
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+.right-sl input
+{
+    width: 39px;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+.right-btn
+{
+    display: flex;
+}
+.right-btn button
+{
+    width: 20%;
+    height: 40px;
+    background-color: #FF6699;
+    color: white;
+    border-radius: 15px;
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.right-btn button:last-child:hover
+{
+    background-color: black;
+    color: #FF6699;
+}
+.right-contact
+{
+    display: flex;
+}
+.right-contact .right-icon
+{
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.right-contact .right-icon i
+{
+    margin-right: 10px;
+    color: #FF6699;
+}
+.detail
+{
+    position: relative;
+    border-top:2px solid #ccc ;
+    margin-top: 30px;
+}
+/* .detail-icon 
+{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FF6699;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 380px;
+    top:-15px;
+    z-index: 1;
+    background-color: white;
+} */
+.detail-big
+{
+    margin-top: 10px;
+}
+.detail-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* --product-related----product-related----product-related----product-related----product-related----product-related----product-related--- */
+.product-related
+{
+    border-top:1px solid #ccc;
+}
+.product-related-title
+{   
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.product-content
+{   
+    justify-content: center;
+    display: flex;
+}
+.related-items
+{   
+    margin-right: 50px;
+}
+.related-items img
+{
+    border: 2px solid #FF6699;
+}
+#t
+{
+    width: 350px;
+    height: 350px;
+}
+#m
+{
+    width:450px;
+    height: 500px;
+}
+/* ------CART-----------CART---------CART---------CART---------CART---------CART---------CART---------CART---------CART---------CART---------CART---------CART---- */
+.container2
+{
+    height: auto;
+}
+.cart 
+{
+    padding:50px 0px ;
+    margin-bottom: 100px;
+    display: block;
+}
+.top-wrap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-wrap .top
+{
+    display: flex;
+    height: 2px;
+    width: 70%;
+    background-color: #ddd;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-icon
+{
+    color: #FF6699;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+}
+.top-icon1 
+{
+    color: #FF6699;
+    border-radius: 50%;
+    border: 3px solid #0DB7EA;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+
+}
+.top i
+{
+    font-size: 20px;
+}
+.cart-content
+{
+    display: flex;
+}
+.cart-left
+{
+    flex:2;
+    padding-right: 12px;
+}
+.cart-left table
+{
+    width: 100%;
+    text-align: center;
+}
+.cart-left table th
+{
+    padding-bottom: 30px;
+    border-collapse: collapse;
+    border-bottom: solid 2px #dddd;
+}
+.cart-left table span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: solid 1px #ddd;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.cart-left table td
+{
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+.cart-left table input
+{
+    width: 30px;
+}
+.cart-left table img
+{
+    width: 130px;
+    border: #FF6699 2px solid;
+}
+
+.cart-right
+{
+    flex:1;
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
+}
+.cart-right table
+{
+    width: 100%;
+}
+.cart-right table th
+{
+    padding-bottom: 30px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ddd;
+}
+.cart-right table td
+{
+    padding: 6px 0px;
+}
+.cart-right table tr:nth-child(4) td
+{
+    border-top: 2px solid #ddd;
+}
+.cart-right table tr td:last-child
+{
+    text-align: right;
+}
+.right-text
+{
+    margin: 10px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: hotpink;
+}
+.right-button
+{
+    display: flex;
+    justify-content: center;
+}
+.right-button button:first-child
+{
+    width: 40%;
+    height: 40px;
+    background-color: #FF6699;
+    color: white;
+    border-radius: 25px;
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+button:first-child:hover
+{
+    background-color: black;
+    color: #FF6699;
+}
+.right-button button:last-child
+{   
+    width: 40%;
+    height: 40px;
+    background-color: black;
+    color: #FF6699;
+    border-radius: 25px;
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}button:last-child:hover
+{
+    background-color: #FF6699;
+    color: white;
+}
+/* --phantrang---phantrang---phantrang---phantrang---phantrang---phantrang---phantrang---phantrang---phantrang-- */
+.page_item
+{
+    border: #FF6699 1px solid;
+    padding: 5px;
+}
